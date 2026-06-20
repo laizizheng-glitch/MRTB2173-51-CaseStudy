@@ -1,0 +1,47 @@
+{
+  "project": "Telecommunication Customer Churn Risk Prediction",
+  "selected_model": "Random Forest",
+  "model_features": [
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges",
+    "TenureBand",
+    "ServiceCount",
+    "LongTermContract",
+    "AutomaticPayment",
+    "HasSupport"
+  ],
+  "excluded_model_columns": [
+    "customerID",
+    "Churn",
+    "gender"
+  ],
+  "low_risk_threshold": 0.3,
+  "high_risk_threshold": 0.6,
+  "binary_evaluation_thresholds": [
+    0.4,
+    0.5,
+    0.6
+  ],
+  "random_state": 42,
+  "training_rows": 5634,
+  "testing_rows": 1409,
+  "created_at": "2026-06-20 04:17:18",
+  "dataset_source": "https://www.kaggle.com/datasets/blastchar/telco-customer-churn",
+  "interpretation_note": "Probabilities support prioritization and do not guarantee that a customer will churn."
+}

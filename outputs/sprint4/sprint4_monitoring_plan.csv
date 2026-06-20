@@ -1,0 +1,8 @@
+Monitoring Area,Measure,Proposed Trigger,Response
+Required Columns,Percentage of expected fields available,Any required scoring column missing,Stop scoring and notify the data owner
+Missing Values,Missing rate by key field,Material increase from training baseline,Review source data and update the backlog
+Duplicate IDs,Number of repeated customer IDs,Any duplicate customer records,Quarantine duplicate records for review
+Prediction Distribution,"Low, Medium, and High risk proportions",Unexpected large change between scoring runs,Investigate source data and possible drift
+Model Performance,"Recall, precision, F1, and ROC-AUC on new labels",Sustained decline from approved baseline,Create a retraining and validation backlog item
+Pipeline Reliability,Successful weekly scoring job,Failed or delayed job,Review logs and rerun after correction
+Business Use,Number of prioritized customers reviewed,Low or declining use,Conduct a service-delivery review with users

@@ -1,0 +1,20 @@
+{
+  "project_title": "Telecommunication Customer Churn Risk Prediction",
+  "repository": "laizizheng-glitch/MRTB2173-51-CaseStudy",
+  "dataset": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+  "dataset_source": "https://www.kaggle.com/datasets/blastchar/telco-customer-churn",
+  "selected_model": "Random Forest",
+  "test_size": 0.2,
+  "risk_thresholds": {
+    "low_below": 0.3,
+    "medium_from": 0.3,
+    "high_from": 0.6
+  },
+  "sprint_1_mvp": "outputs/sprint1/sprint1_mvp_cleaned_churn_data.xlsx",
+  "sprint_2_mvp": "outputs/sprint2/sprint2_initial_churn_prediction_table.xlsx",
+  "sprint_3_mvp": "outputs/sprint3/sprint3_model_evaluation_and_refined_mvp.xlsx",
+  "streamlit_main_file": "dashboard/app.py",
+  "ci_workflow": ".github/workflows/ci_cd_pipeline.yml",
+  "created_at": "2026-06-20 04:17:18",
+  "deployment_status": "Conceptual proof of concept"
+}
